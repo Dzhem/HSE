@@ -7,4 +7,4 @@ if k > (n * m):
 elif k % n == 0 or k % m == 0:
     print('YES')
 else:
-    print('NO')
+    print('No')
