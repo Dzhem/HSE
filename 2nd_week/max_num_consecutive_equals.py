@@ -1,6 +1,6 @@
 prev_num = int(input())
 cur_num = int(input())
-max_num_cons_eq = 1
+max_num_cons_eq = 0
 cur_max_num_cons_eq = 1
 
 while cur_num != 0:
@@ -8,6 +8,8 @@ while cur_num != 0:
         cur_max_num_cons_eq += 1
     elif max_num_cons_eq < cur_max_num_cons_eq:
         max_num_cons_eq = cur_max_num_cons_eq
+        cur_max_num_cons_eq = 1
+    else:
         cur_max_num_cons_eq = 1
     prev_num = cur_num
     cur_num = int(input())
