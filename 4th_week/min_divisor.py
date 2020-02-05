@@ -1,9 +1,10 @@
-def MinDivisor(num):
-    if num % 2 == 0:
-        return 2
-    elif num % 3 == 0:
-        return 3
-    return int(num)
+def MinDivisor(n):
+    i = 2
+    while n % i != 0:
+        if i >= n ** 0.5:
+            return int(n)
+        i += 1
+    return int(i)
 
 
 n = float(input())
