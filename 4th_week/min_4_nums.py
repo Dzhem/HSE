@@ -8,3 +8,6 @@ c = int(input())
 d = int(input())
 
 print(min4(a, b, c, d))
+
+t=int(input())
+
